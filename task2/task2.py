@@ -20,6 +20,6 @@ def task2():
     gram_test = np.dot(x_test, x_train.T)
 
     predicted = clf.predict(gram_test)
-    print(predicted)
+    print('Predicted values:', predicted)
     print('Train score:', clf.score(gram_train, y_train))
     print('Test score:', clf.score(gram_test, y_test))

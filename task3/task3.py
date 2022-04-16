@@ -10,6 +10,5 @@ def task3():
     x = ds[ds.columns[0:6]].to_numpy()
     clustering = SpectralClustering(n_clusters=2, affinity='nearest_neighbors', random_state=0).fit(x)
     labels = clustering.labels_
-
     plt.scatter(x[:, 0], x[:, 1], c=labels)
     plt.show()
